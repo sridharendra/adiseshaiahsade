@@ -1,0 +1,1044 @@
+@import url('https://https://fonts.googleapis.com/css2?family=Spartan:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family:'Spartan', sans-serif;
+}
+h1{
+    font-size: 50px;
+    line-height: 64px;
+    color: #222;
+}
+h2{
+    font-size: 46px;
+    line-height: 54px;
+    color: #222;
+}
+h4{
+    font-size: 20px;
+    color: #222;
+
+}
+h6{
+    font-weight: 700;
+    font-size: 12px;
+}
+p{
+    font-size: 16px;
+    color: #465b52;
+    margin: 15px 0 20px 0;
+
+}
+.section-p1{
+    padding: 40px 80px;
+}
+.section-m1{
+    margin: 40px 0;
+}
+
+button.normal{
+    font-size: 14px;
+    font-weight: 600;
+    padding: 15px 30px;
+    color: #000000;
+    background-color: #fff;
+    border-radius: 4px;
+    cursor: pointer;
+    border: none;
+    outline: none;
+    transition: 0.2s;
+}
+button.white{
+    font-size: 13px;
+    font-weight: 600;
+    padding: 11px 18px;
+    color: #fff;
+    background-color: transparent;
+    cursor: pointer;
+    border: 1px solid #fff;
+    outline: none;
+    transition: 0.2s;
+}
+
+body{
+    width: 100%;
+}
+
+
+/*Header start */
+
+#header{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px 80px;
+    background: #E3E6F3;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.06);
+    z-index: 999;
+    position: sticky;
+    top: 0;
+    left: 0;
+}
+
+#navbar{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+#navbar li{
+    list-style: none;
+    padding: 0 20px;
+    position: relative;
+}
+#navbar li a{
+    text-decoration: none;
+    font-size: 16px;
+     font-weight: 600;
+     color: #1a1a1a;
+     transition: 0.3s ease;
+}
+#navbar li a:hover,
+#navbar li a.active{
+    color:#0d978e ;
+}
+#navbar li a.active::after,
+#navbar li a:hover::after{
+    content: "";
+    width: 30%;
+    height: 2px;
+    background: #0d978e;
+    position: absolute;
+    bottom: -4px;
+    left: 20px;
+}
+#mobiel{
+    display:none;
+    align-items: center;
+}
+#close{
+    display: none;
+}
+
+/*Home Page */
+#hero{
+    background-color: #E3E6F3;
+    height: 50vh;
+    width: 100%;
+    padding: 0 80px;
+    display: flex;
+    justify-content: space-between;
+}
+#hero h4{
+    padding-bottom: 15px;
+    display: none;
+}
+#hero h2{
+    display: none;
+}
+#hero img{
+    height: 190px;
+    width: 190px;
+    margin-top: 80px;
+}
+#hero h1{
+    margin-top: 130px;
+    font-size: 110px;
+}
+#hero p{
+    display: none;
+}
+#hero button{
+    background-image: url(img/images\ \(3\).jpeg);
+    background-color: transparent;
+    color: #E3E6F3;
+    border: 0;
+    padding: 19px 90px 14px 55px;
+    background-repeat: no-repeat;
+    cursor: pointer;
+    font-weight: 700;
+    font-size: 15px;
+    border-radius: 50px;
+    display: none;
+}
+#feature{
+    display:flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+#feature .fe-box a{
+    text-decoration: none;
+    color: #000000;
+   
+}
+#feq1{
+    background-image: url(https://media.istockphoto.com/id/1318957901/vector/the-green-background-with-a-white-gradient-is-perfect-for-those-of-you-who-are-looking-for-a.jpg?s=612x612&w=0&k=20&c=EXWdCg9600DkVRDKd7YkqOlXFZpC8EiFtSwUlJ8xaqE=);
+}
+#feq2{
+    background-image: url(https://media.istockphoto.com/id/1071588902/photo/abstract-blurred-gradient-background-in-bright-colors-colorful-smooth-illustration.jpg?s=612x612&w=0&k=20&c=NEFWbjpLF4X9JAHBcpM7w0xt0u9XkMAIUWlYhzXjN_E=);
+}
+#feq3{
+    background-image: url(https://media.istockphoto.com/id/1406498754/photo/purple-blue-green-abstract-background-gradient-toned-colorful-concrete-wall-texture.jpg?s=612x612&w=0&k=20&c=6W4hlmy_SNG3ACm9t7a5OO6jdDDmEp_surXsPe8LWB8=);
+}
+#feq4{
+    background-image: url(https://media.istockphoto.com/id/1741134971/photo/marble-granite-white-wall-surface-pink-pattern-graphic-abstract-light-elegant-for-do-floor.jpg?s=612x612&w=0&k=20&c=NF_pVbj1-l9IRwNGYQzlAf1DaD7yPhVi13DNxyK5KOw=);
+}
+#feq5{
+    background-image: url(https://media.istockphoto.com/id/1319884996/photo/abstract-geometric-shapes-flat-background-trendy-bright-tropical-blue-colors.jpg?s=612x612&w=0&k=20&c=ixAnUZIrMcJyPuQoa5ZCcwNC-Sa-W_rkRAPUr3E_e9E=);
+}
+#feature .fe-box {
+    width: 180px;
+    text-align: center;
+    padding: 25px 5px;
+    box-shadow: 20px 20px 34px rgba(0, 0, 0, 0.03);
+    border: 1px solid #E3E6F3;
+    border-radius: 4px;
+    margin: 15px 0;
+    
+}
+
+#feature .fe-box:hover{
+    box-shadow: 10px 10px 54px rgba(0, 0, 0, 0.1);
+    
+}
+#product1 .pro-container h4,
+.star{
+    display: none;
+}
+#product1 .pro-container{
+    display: flex;
+    justify-content: space-between;
+    padding-top: 20px;
+    flex-wrap: wrap;
+}
+#product1 {
+    text-align: center;
+}
+#product1 .pro{
+    width: 23%;
+    min-width: 250px;
+    padding: 10px 12px;
+    border: 1px solid #E3E6F3;
+    border-radius: 25px;
+    cursor: pointer;
+    box-shadow: 20px 20px 30px rgba(0, 0, 0, 0.03);
+    margin: 15px 0;
+    transition: 0.2s ease;
+}
+#product1 .pro:hover{
+    box-shadow: 20px 20px 30px rgba(0, 0, 0, 0.06);
+
+}
+
+#product1 .pro img{
+    width: 100%;
+    border-radius: 20px;
+}
+#product1 .pro .des{
+    text-align: start;
+    padding: 10px 0;
+}
+#product1 .pro .des span{
+    color: #606063;
+    font-size: 12px;
+}
+#product1 .pro .des h5{
+    padding-top: 7px;
+    color: #1a1a1a;
+    font-size: 14px;
+
+}
+#product1 .pro .des i{
+    font-size: 12px;
+    color: rgba(243, 181, 25);
+
+}
+#product1 .pro .des h4{
+    padding-top: 7px;
+    font-size: 15px;
+    font-weight: 700px;
+    color: #15dfd2;
+}
+#product1 .pro .cart{
+    width: 40px;
+    height: 40px;
+    line-height: 40px;
+    border-radius: 50px;
+    background-color: #e8f6ea;
+    font-weight: 500;
+    color: #0d978e;
+}
+
+#banner{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    background-image: url(https://media.istockphoto.com/id/1421537120/vector/black-abstract-background-with-geometric-shapes-elegant.jpg?s=612x612&w=0&k=20&c=bH0gZpBdBxQTiAB7FxJqswNdCizgD0MJGHMN9DfELx0=);
+    width: 100%;
+    height: 40vh;
+    background-size: cover;
+    background-position: center;
+    display: none;
+}
+
+#banner h4{
+    color: #fff;
+    font-size: 30px;
+}
+
+#banner h2{
+    color: #fff;
+    font-size: 40px;
+    padding: 10px 0;
+}
+
+#banner h2 span{
+    color: #00e5ff;
+}
+#banner button:hover{
+    background-color: #000000;
+    color: #fff;
+}
+#sm-banner{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+
+}
+#sm-banner .banner-box{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    background-image: url(https://media.istockphoto.com/id/1346587616/photo/abstract-orange-color-monochrome-geometry-paper-background.jpg?s=612x612&w=0&k=20&c=dmxZLvKgnfvN7BHE1EUAtr7JvpwWsoRFstWtdg3j4XM=);
+    min-width: 650px;
+    height: 50vh;
+    background-size: cover;
+    background-position: center;
+    padding: 30px;
+    display: none;
+}
+#sm-banner .banner-box2{
+    background-image: url(https://media.istockphoto.com/id/1480317768/photo/texture-of-yellow-fibrous-paper-cardboard-close-up-paper-background-embossed-surface.jpg?s=612x612&w=0&k=20&c=FEkGTaIk5r6mJXqo69jH80L_YyLi9knlk1MCi_gQRF0=);
+}
+#sm-banner h4 {
+    color: #fefefe;
+    font-size: 20px;
+    font-weight: 300;
+}
+#sm-banner h2 {
+    color: #fff;
+    font-size: 28px;
+    font-weight: 800;
+}
+#sm-banner span {
+    color: #fff;
+    font-size: 14px;
+    font-weight: 500;
+    padding-bottom: 15px;
+}
+#sm-banner .banner-box:hover button {
+    background-color: #970d0d;
+    border: 1px solid #970d0d;
+}
+#sm-banner .banner-box2:hover button{
+    background-color: yellowgreen;
+    border: 1px solid yellowgreen;
+    display: none;
+}
+#banner3{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    padding: 0px 80px;
+}
+#banner3 .banner-box{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    background-image: url(https://media.istockphoto.com/id/172267029/photo/sketch5.jpg?s=612x612&w=0&k=20&c=zCOKW_ikuZlyZiOzZpoUkYnRwBE1nRqDrjO78bHc1oI=);
+    min-width: 30%;
+    height: 30vh;
+    background-size: cover;
+    background-position: center;
+    padding: 20px;
+    margin-bottom: 20px;
+    display: none;
+}
+
+#banner3 .banner-box3{
+    background-image: url(https://media.istockphoto.com/id/1419410282/photo/silent-forest-in-spring-with-beautiful-bright-sun-rays.jpg?s=612x612&w=0&k=20&c=UHeb1pGOw6ozr6utsenXHhV19vW6oiPIxDqhKCS2Llk=);
+
+    
+}
+#banner3 .banner-box4{
+    background-image: url(https://media.istockphoto.com/id/1337232523/photo/high-angle-view-of-a-lake-and-forest.jpg?s=612x612&w=0&k=20&c=72ZZZG5jNaEE0QRq6o4pUk3CI0gG-Lw5AeWQUVgO7zQ=);
+}
+#banner3 .banner-box h3{
+    color: #ff0000;
+}
+#banner3 .banner-box3 h3{
+    color: rgb(0, 81, 255);
+}
+#banner3 .banner-box4 h3{
+    color: rgb(249, 77, 77);
+}
+#banner3 h2{
+    color: #fff; 
+    font-weight: 900;
+    font-size: 22px;
+}
+#banner3 h3{
+    color: #8be7f2;
+    font-weight: 800;
+    font-size: 15px;
+}
+#newseller{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    align-items: center;
+    background-image: url(https://media.istockphoto.com/id/1466775917/photo/navy-blue-wide-panoramic-textile-texture-indigo-color-abstract-textured-background-dark.jpg?s=612x612&w=0&k=20&c=pHDniPT_joTffUCZl_oswjzX5GYUGopiUrKpQ8ERRzo=);
+    background-repeat: no-repeat;
+    background-position: 20% 30%;
+    background-color: #000000;
+}
+#newseller h4{
+    font-size: 22px;
+    font-weight: 800;
+    color: #fff;
+
+}
+#newseller p{
+    font-size: 16px;
+    font-weight: 600;
+    color: #7e82f8;
+
+}
+#newseller p span{
+    color: #fb2a2a;
+}
+#newseller .form{
+    display: flex;
+    width: 40%;
+
+}
+#newseller input{
+    height: 3.125rem;
+    padding: 0 1.25em;
+    font-size: 14px;
+    width: 100%;
+    border: 1px solid transparent;
+    border-radius: 4px;
+    outline: none;
+    border-top-right-radius: 0;
+    border-bottom-right-radius: 0;
+}
+#newseller button{
+    background-color: #0d978e;
+    color: #fff;
+    white-space: nowrep;
+    height: 3.125rem;
+    width: 50%;
+    border-bottom-left-radius: 0;
+    border-top-left-radius: 0;
+}
+footer{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+footer .col{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    margin-bottom: 20px;
+}
+footer .logo{
+    margin-bottom: 30px;
+}
+
+footer h4{
+    font-size: 14px;
+    padding-bottom: 20px;
+}
+footer p{
+    font-size: 13px;
+    margin: 0 0 8px 0;
+}
+footer a{
+    font-size: 14px;
+    text-decoration: none;
+    color: #222;
+    margin-bottom: 10px;
+}
+footer .follow{
+    margin-top: 20px;
+
+}
+footer .follow i{
+    color: #465b52;
+    padding-right: 4px;
+    cursor: pointer;
+}
+footer .install img{
+    margin: 10px 0 15px 0;
+}
+footer .follow i:hover,
+footer a:hover {
+    color: #15dfd2;
+}
+footer .copyright {
+    width: 100%;
+    text-align: center;
+}
+/* Drawings */
+#Mid{
+    width: 100%;
+    height: 75vh;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    text-align: center;
+}
+
+#Mid video{
+    width: 100%;
+    height: 74%;
+    pointer-events: none;
+    object-fit: cover;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    
+}
+.Drawings{
+    position: relative;
+    padding-top: 165px;
+}
+.Drawings h2{
+    color: #e2e2e2;
+    font-size: 150px;
+}
+.Drawings p{
+    color: #9a9a9a;
+    display: none;
+}
+
+/* Oil Paintings */
+
+#mid{
+    width: 100%;
+    height: 100vh;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    text-align: center;
+}
+
+#mid video{
+    width: 100%;
+    height: 100%;
+    pointer-events: none;
+    object-fit: cover;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    
+}
+
+.text1{
+    position: relative;
+    padding-top: 170px;
+}
+
+.text1 h2{
+    color: #000000;
+    font-size: 150px;
+}
+
+.text1 p{
+    color: #363636;
+}
+
+/* acrylic Paintings  */
+.text2 {
+    position: relative;
+    padding-top: 170px;
+}
+.text2 h2{
+    color: #ffffff;
+    font-size: 150px;
+}
+.text2 p{
+    color: antiquewhite;
+    display: none;
+}
+/* water colors */
+.text3{
+    position: relative;
+    padding-top: 170px;
+}
+.text3 h2{
+    color: #ffffff;
+    font-size: 100px;
+}
+.text4{
+    position: relative;
+    padding-top: 250px;
+}
+.text4 h2{
+    color: #000000;
+    font-size: 150px;
+}
+
+#vid{
+    width: 100%;
+    height: 100vh;
+    overflow: hidden;
+    display: flex;
+
+}
+#vid video{
+    width: 100%;
+    height: 100%;
+    pointer-events: none;
+    object-fit: cover;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    
+}
+.text5{
+    position: relative;
+    align-items: flex-start;
+    padding-top: 220px;
+    padding-left: 275px;
+}
+.text5 h2{
+    color: #ffffff;
+    font-family: cursive;
+    font-size: 120px;
+}
+.text6 {
+    position: relative;
+    padding-top: 175px;
+}
+.text6 h2{
+    color: #e2e2e2;
+    font-size: 150px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+/* blog page */
+#page-header.blog-header{
+    background-image: url(https://media.istockphoto.com/id/1222310434/photo/abstract-turquoise-bright-wood-texture-over-blue-light-natural-color-background-art-plain.jpg?s=612x612&w=0&k=20&c=9iXmErYhR9hhGtSk8vHLeXvGCiQ-AtmI4AulrMjehGY=);
+}
+#page-header .blog-header h2{
+    color: #000000;
+}
+#blog{
+    padding: 150px 150px 0 150px;
+}
+
+#blog .blog-box{
+    display: flex;
+    align-items: center;
+    width: 100%;
+    position: relative;
+    padding-bottom: 100px;
+}
+#blog .blog-img{
+    width: 50%;
+    margin-right: 40px;
+}
+#blog img{
+    width: 100%;
+    height: 650px;
+    object-fit: cover;
+}
+
+#blog .blog-details{
+    width: 50%;
+}
+
+#blog .blog-details a{
+    text-decoration: none;
+    font-size: 15px;
+    color: #000000;
+    font-weight: 700;
+    position: relative;
+    transition: 0.3s;
+}
+
+#blog .blog-details a::after{
+    content: "";
+    width: 50px;
+    height: 1px;
+    background-color: #000000;
+    position: absolute;
+    top: 4px;
+    right: -60px;
+}
+
+#blog .blog-details a:hover{
+    color: #0d978e;
+}
+
+#blog .blog-details a:hover::after{
+    background-color: #0d978e ;
+}
+
+#blog .blog-box h1{
+    position: absolute;
+    top: -45px;
+    left: 0;
+    font-size: 70px;
+    font-weight: 700;
+    color: #c9cbce;
+    z-index: -10;
+}
+
+/* About page */
+#page-header.about-header{
+    background-image: url(https://media.istockphoto.com/id/520941214/photo/snorkel-blue-brick-wall-background.jpg?s=612x612&w=0&k=20&c=_BQ-Bwozy5SAIPdOgQNqc9AVrPoFelVYhXViva-9JIY=);
+}
+
+#about-head{
+    display: flex;
+    align-items: center;
+}
+
+#about-head img{
+    width: 50%;
+    height: auto;
+    padding-top: 15px;
+    border-radius: 35px;
+    padding-left: 15px;
+}
+
+#about-head div{
+    padding-left: 40px;
+}
+/* mixed Media */
+#page-header1{
+    background-image: url(https://media.istockphoto.com/id/1210226550/photo/blue-bright-abstract-wicker-pattern-background-close-up-decoration-material-texture-design.jpg?s=612x612&w=0&k=20&c=OUr_U6oTEzD9a2BKYsm2HvtNYNBfgV8OpEkJvz2CdGc=);
+    width: 100%;
+    height: 40vh;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    flex-direction: column;
+    padding: 14px;
+}
+#page-header1 h2{
+    color: #fff;
+}
+/* Shop Page */
+#page-header{
+    background-image: url(https://media.istockphoto.com/id/1359861587/vector/blue-modern-abstract-wide-banner-with-geometric-shapes-dark-blue-abstract-background.jpg?s=612x612&w=0&k=20&c=xDMI5_-xyh_IHm2ca07x5xFTR7kRoFZJhxrq10FQra0=);
+    width: 100%;
+    height: 40vh;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    flex-direction: column;
+    padding: 14px;
+}
+#page-header h2,
+#page-header p{
+    color: #fff;
+}
+#pagination {
+    text-align: center;
+}
+#pagination a {
+    text-decoration: none;
+    background-color: rgb(255, 39, 39);
+    padding: 15px 20px;
+    border-radius: 4px;
+    color: #fff;
+    font-weight: 600;
+}
+#pagination a i{
+    font-size: 16px;
+    font-weight: 600;
+}
+
+/* shingle product */
+#prodetails{
+    display: flex;
+    margin-top: 20px;
+}
+#prodetails .single-pro-image{
+    width: 40%;
+    margin-right: 50px;
+}
+.small-img-group{
+    display: flex;
+    justify-content: space-between;
+}
+.small-img-col{
+    flex-basis: 23%;
+    cursor: pointer;
+    margin-top: 5px;
+}
+#prodetails .single-pro-details{
+    width: 30%;
+    padding-top: 30px;
+}
+#prodetails .single-pro-details h4{
+    padding: 40px 020px 0;
+    font-size: 28px;
+}
+#prodetails .single-pro-details h2{
+    font-size: 26px;
+}
+#prodetails .single-pro-details select{
+    display: block;
+    padding: 5px 10px;
+    margin-bottom: 10px;
+    display: none;
+}
+#prodetails .single-pro-details input{
+    width: 50px;
+    height: 47px;
+    padding-left: 10px;
+    font-size: 16px;
+    margin-right: 10px;
+    display: none;
+    
+}
+#prodetails .single-pro-details input:focus{
+    outline: none;
+}
+#prodetails .single-pro-details button{
+    background-image: url(https://media.istockphoto.com/id/1280738777/photo/lots-of-empty-space-for-lettering-and-design-empty-light-green-flat-minimalistic-background.jpg?s=612x612&w=0&k=20&c=_YCTfZ4Sv_lrxd-ncu7oO5d03pg_ZxYrXzAg12WaYDw=);
+    border-radius: 20px;
+    color: #fff;
+}
+#prodetails .single-pro-details span{
+    line-height: 25px;
+}
+
+/* Start Media Query */
+@media (max-width:799px){
+    #navbar {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        justify-content: flex-start;
+        position: fixed;
+        top: 0;
+        right: -300px;
+        height: 100vh;
+        width: 300px;
+        background-color: #E3E6F3;
+        box-shadow: 0 40px 60px rgba(0, 0, 0, 0.1);
+        padding: 80 0 0 10px;
+        transition: 0.3;
+    }
+    #navbar.active {
+        right: 0px;
+    }
+    #navbar li{
+        margin-bottom: 25px;
+    }
+    #mobiel{
+        display:flex;
+        align-items: center;
+    }
+    #mobiel i {
+        color: #1a1a1a;
+        padding-left: 20px;
+    }
+    #close {
+        display: initial;
+        position: absolute;
+        top: 30px;
+        left: 30px;
+        color: #222;
+        font-size: 24px;
+    }
+    #lg-bag{
+        display: none;
+    }
+
+    #hero {
+        height: 50vh;
+        padding: 0 80px;
+        background-position: top 30% right 30%;
+    }
+    #hero h1{
+        font-size: 65px;
+    }
+
+    #feature {
+        justify-content: center;
+    }
+    #feature .fe-box {
+        width: 180px;
+        text-align: center;
+        padding: 25px 15px;
+        box-shadow: 20px 20px 34px rgba(0, 0, 0, 0.03);
+        border: 1px solid #E3E6F3;
+        border-radius: 4px;
+        margin: 15px 0;
+    }
+    #product1 .pro-container {
+        justify-content: center;
+    }
+    #product1 .pro {
+        width: 23%;
+        min-width: 250px;
+        padding: 10px 12px;
+        border: 1px solid #E3E6F3;
+        border-radius: 25px;
+        cursor: pointer;
+        box-shadow: 20px 20px 30px rgba(0, 0, 0, 0.03);
+        margin: 15px 0;
+        transition: 0.2s ease;
+    }
+    #product1 .pro {
+        margin: 15px;
+    }
+    #banner {
+        height: 30vh;
+    }
+    #sm-banner .banner-box {
+        min-width: 100%;
+        height: 30vh;
+    }
+    #banner3 {
+        padding: 0px 40px;
+    }
+    #banner3 .banner-box {
+        width: 28%;
+    }
+    #newseller .form {
+        width: 70%;
+    }
+}
+
+@media (max-width:477px){
+    .section-p1 {
+        padding: 20px;
+    }
+    #header {
+        padding: 10px 30px;
+    }
+    #hero {
+        padding: 0 20px;
+        background-position: 55%;
+    }
+    h1 {
+        font-size: 38px;
+    }
+    h2 {
+        font-size: 32px;
+    }
+    #feature {
+        justify-content: space-between;
+    }
+    #feature .fe-box {
+        width: 155px;
+        margin:0 0 15px 0;
+    }
+    #product1 .pro {
+        width: 100%;
+    }
+    #banner {
+        height: 40vh;
+    }
+    #sm-banner .banner-box {
+        height: 40vh;
+    }
+    #sm-banner .banner-box2 {
+       margin-top: 20px;
+    }
+    #banner3 {
+        padding: 0px 20px;
+    }
+    #banner3 .banner-box {
+        width: 100%;
+    }
+    #newseller {
+        padding: 0px 20px;
+    }
+    #newseller .form {
+        width: 100%;
+    }
+    footer .copyright {
+        text-align: start;
+    }
+
+    /* Single Product */
+    #prodetails {
+        display: flex;
+        flex-direction: column;
+    } 
+    #prodetails .single-pro-image {
+        width: 100%;
+        margin-right: 0px;
+    }  
+    #prodetails .single-pro-details {
+        width: 100%;
+        
+    }
+
+    /* blog page */
+    #blog {
+        padding: 100px 20px 0 20px;
+    }
+    #blog .blog-box {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    #blog .blog-img {
+        width: 100%;
+        margin-right: 0;
+        margin-bottom: 35px;
+    }
+    #blog .blog-details {
+        width: 100%;
+    }
+
+    /* adout us */
+    #about-head {
+        flex-direction: column;
+    }
+    #about-head img {
+        width: 100%;
+        margin-bottom: 30px;
+    }
+    #about-head div {
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+
+    .text1 h2 {
+        font-size: 50px;
+    }
+    .Drawings h2 {
+        color: #e2e2e2;
+        font-size: 50px;
+    }
+    #hero h1 {
+        font-size: 30px;
+    }
+    .text3 h2{
+        font-size: 50px;
+    }
+}
